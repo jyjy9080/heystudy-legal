@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계정 삭제 요청 - HeyStudy</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #2d5b3e;
+    --accent-soft: #e8f0ea;
+    --border: #e5e5e0;
+    --warn: #c44536;
+    --warn-soft: #fce8e6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+    padding: 40px 20px 80px;
+  }
+  .container { max-width: 760px; margin: 0 auto; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 24px; margin-bottom: 40px; }
+  .logo { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; }
+  h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .nav { background: var(--accent-soft); padding: 12px 20px; border-radius: 8px; margin-bottom: 40px; font-size: 14px; }
+  .nav a { color: var(--accent); text-decoration: none; font-weight: 500; margin-right: 20px; }
+  .nav a:hover { text-decoration: underline; }
+  .nav .active { font-weight: 700; }
+  h2 { font-size: 20px; font-weight: 700; margin-top: 40px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  p, ul { margin-bottom: 16px; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--accent); font-weight: 600; }
+  .method-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .method-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .method-num {
+    background: var(--accent);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .method-name { font-size: 18px; font-weight: 600; }
+  .recommended {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  .warning-box {
+    background: var(--warn-soft);
+    border-left: 4px solid var(--warn);
+    padding: 16px 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  .warning-box strong { color: var(--warn); }
+  .email-link {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 8px;
+  }
+  .email-link:hover { background: #1f4530; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th, td { border: 1px solid var(--border); padding: 10px 14px; text-align: left; }
+  th { background: var(--accent-soft); font-weight: 600; }
+  footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">HeyStudy</div>
+  <h1>계정 삭제 요청</h1>
+  <div class="meta">앱을 설치하지 않고도 계정 삭제를 요청할 수 있습니다</div>
+</header>
+
+<nav class="nav">
+  <a href="index.html">개인정보 처리방침</a>
+  <a href="terms.html">이용약관</a>
+  <a href="delete.html" class="active">계정 삭제 요청</a>
+</nav>
+
+<h2>계정 삭제 방법</h2>
+<p>HeyStudy 회원은 두 가지 방법으로 계정 삭제를 요청할 수 있습니다.</p>
+
+<div class="method-box">
+  <div class="method-title">
+    <div class="method-num">1</div>
+    <div class="method-name">앱 내에서 직접 삭제 <span class="recommended">추천</span></div>
+  </div>
+  <p>HeyStudy 앱을 실행한 후 다음 경로로 진행하세요.</p>
+  <ul>
+    <li>HeyStudy 앱 실행</li>
+    <li>로그인</li>
+    <li>우측 상단 <strong>프로필 아이콘</strong> 터치</li>
+    <li>화면 하단 <strong>"⚠️ 계정 탈퇴"</strong> 버튼 터치</li>
+    <li>비밀번호 또는 "확인" 입력 후 탈퇴 완료</li>
+  </ul>
+  <p>이 방법은 즉시 처리됩니다.</p>
+</div>
+
+<div class="method-box">
+  <div class="method-title">
+    <div class="method-num">2</div>
+    <div class="method-name">이메일 요청</div>
+  </div>
+  <p>앱에 접속할 수 없거나 다른 사정이 있는 경우, 아래 이메일로 계정 삭제를 요청하실 수 있습니다.</p>
+  <p><strong>요청 시 다음 정보를 포함해주세요:</strong></p>
+  <ul>
+    <li>회원가입 시 사용한 이메일 주소</li>
+    <li>가입 방법 (이메일 또는 Google 간편 로그인)</li>
+    <li>"계정 삭제 요청"이라는 제목</li>
+  </ul>
+  <a href="mailto:jyjy.9080@gmail.com?subject=HeyStudy%20계정%20삭제%20요청&body=가입%20이메일%3A%20%0A가입%20방법%20(이메일%2FGoogle)%3A%20%0A요청%20내용%3A%20계정%20및%20모든%20데이터%20삭제%20요청합니다." class="email-link">이메일로 요청하기</a>
+  <p style="margin-top: 12px; font-size: 14px; color: var(--muted);">
+    이메일 요청은 영업일 기준 3일 이내에 처리됩니다.
+  </p>
+</div>
+
+<h2>삭제되는 데이터</h2>
+<p>계정 삭제를 요청하시면 다음 데이터가 영구 삭제됩니다.</p>
+<ul>
+  <li>이메일 주소, 이름</li>
+  <li>비밀번호 (암호화 저장된 해시)</li>
+  <li>학습 진도 및 학습 기록</li>
+  <li>적립된 포인트</li>
+  <li>출석 일수 및 연속 출석 기록</li>
+  <li>친구 초대 코드 및 초대 이력</li>
+  <li>사용자가 생성한 AI 카테고리</li>
+  <li>접속 로그</li>
+</ul>
+
+<h2>삭제 처리 일정</h2>
+<table>
+<tr><th>요청 방법</th><th>처리 시간</th><th>완전 삭제 시점</th></tr>
+<tr><td>앱 내 직접 삭제</td><td>즉시 비활성화</td><td>30일 후 자동 영구 삭제</td></tr>
+<tr><td>이메일 요청</td><td>3일 이내</td><td>30일 후 자동 영구 삭제</td></tr>
+</table>
+
+<div class="warning-box">
+  <strong>⚠️ 주의사항</strong>
+  <ul style="margin-top: 8px; margin-bottom: 0;">
+    <li><strong>30일 이내 복구 가능</strong>: 탈퇴 후 30일 이내에 동일 계정으로 다시 로그인하면 자동으로 계정이 복구됩니다.</li>
+    <li><strong>30일 경과 후</strong>: 모든 데이터가 영구 삭제되며, 복구할 수 없습니다.</li>
+    <li><strong>친구 초대 보상</strong>: 다른 사용자가 회원의 초대로 받았던 포인트는 회수되지 않으며 그대로 유지됩니다.</li>
+    <li><strong>적립 포인트</strong>: 탈퇴와 함께 모든 포인트가 소멸되며, 환금되지 않습니다.</li>
+  </ul>
+</div>
+
+<h2>법적 보존 기간</h2>
+<p>다음의 경우 일부 정보는 관련 법령에 따라 추가 보존될 수 있습니다.</p>
+<ul>
+  <li>부정 이용 방지: 1년 (해당 사용자가 부정 이용으로 확인된 경우)</li>
+</ul>
+
+<h2>문의</h2>
+<p>계정 삭제 요청과 관련하여 추가 문의사항이 있으시면 아래로 연락해주세요.</p>
+<table>
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>담당자</td><td>Minjae Kim (개인정보 보호책임자)</td></tr>
+<tr><td>이메일</td><td>jyjy.9080@gmail.com</td></tr>
+<tr><td>응답 시간</td><td>평일 09:00 ~ 18:00 (3일 이내 응답)</td></tr>
+</table>
+
+<footer>
+  © 2026 HeyStudy. All rights reserved.<br>
+  문의: jyjy.9080@gmail.com
+</footer>
+
+</div>
+</body>
+</html>
