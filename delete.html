@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>계정 삭제 요청 - HeyStudy</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #2d5b3e;
+    --accent-soft: #e8f0ea;
+    --border: #e5e5e0;
+    --warn: #c44536;
+    --warn-soft: #fce8e6;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.75;
+    padding: 40px 20px 80px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 800px; margin: 0 auto; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 28px; margin-bottom: 40px; }
+  .logo { font-size: 14px; font-weight: 600; letter-spacing: 0.05em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; }
+  h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+  .meta { color: var(--muted); font-size: 14px; line-height: 1.6; }
+  .nav { background: var(--accent-soft); padding: 14px 22px; border-radius: 10px; margin-bottom: 40px; font-size: 14px; }
+  .nav a { color: var(--accent); text-decoration: none; font-weight: 500; margin-right: 22px; }
+  .nav a:hover { text-decoration: underline; }
+  .nav .active { font-weight: 700; }
+  h2 { font-size: 22px; font-weight: 700; margin-top: 48px; margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 16px; font-weight: 600; margin-top: 24px; margin-bottom: 12px; color: var(--accent); }
+  p, ul { margin-bottom: 16px; }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--accent); font-weight: 600; }
+  .method-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .method-title { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .method-num {
+    background: var(--accent); color: white; width: 36px; height: 36px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 18px;
+  }
+  .method-name { font-size: 19px; font-weight: 600; }
+  .recommended {
+    background: var(--accent-soft); color: var(--accent);
+    padding: 4px 12px; border-radius: 14px; font-size: 12px; font-weight: 600; margin-left: 8px;
+  }
+  .warning-box {
+    background: var(--warn-soft); border-left: 4px solid var(--warn);
+    padding: 18px 22px; border-radius: 0 6px 6px 0; margin: 20px 0;
+  }
+  .warning-box strong { color: var(--warn); }
+  .email-link {
+    display: inline-block; background: var(--accent); color: white;
+    padding: 12px 24px; border-radius: 8px; text-decoration: none;
+    font-weight: 600; margin-top: 12px; transition: background 0.2s;
+  }
+  .email-link:hover { background: #1f4530; }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 14px; }
+  th, td { border: 1px solid var(--border); padding: 12px 14px; text-align: left; vertical-align: top; }
+  th { background: var(--accent-soft); font-weight: 600; color: var(--accent); }
+  .intro {
+    background: white; border-left: 4px solid var(--accent);
+    padding: 18px 22px; margin-bottom: 36px; font-size: 15px;
+    line-height: 1.7; border-radius: 0 6px 6px 0;
+  }
+  footer { margin-top: 60px; padding-top: 28px; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="logo">HeyStudy</div>
+  <h1>계정 및 데이터 삭제 요청</h1>
+  <div class="meta">
+    Account & Data Deletion Request<br>
+    <strong>Google Play Store 정책 준수 페이지</strong>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="index.html">개인정보 처리방침</a>
+  <a href="terms.html">이용약관</a>
+  <a href="delete.html" class="active">계정 삭제 요청</a>
+</nav>
+
+<div class="intro">
+HeyStudy 회원은 「개인정보 보호법」 제36조에 따라 본인의 개인정보 삭제를 언제든지 요청할 수 있습니다. 본 페이지는 Google Play Store의 데이터 안전성 정책에 따라 앱 외부에서도 계정 삭제를 요청할 수 있도록 제공됩니다.
+</div>
+
+<h2>계정 삭제 방법</h2>
+<p>HeyStudy는 회원의 편의를 위해 두 가지 방법으로 계정 삭제 요청을 접수합니다.</p>
+
+<div class="method-box">
+  <div class="method-title">
+    <div class="method-num">1</div>
+    <div class="method-name">앱 내 직접 삭제 <span class="recommended">즉시 처리</span></div>
+  </div>
+  <p>HeyStudy 앱을 실행한 후 다음 경로로 진행하세요.</p>
+  <ul>
+    <li>HeyStudy 앱 실행</li>
+    <li>로그인</li>
+    <li>우측 상단 <strong>프로필 아이콘</strong> 터치</li>
+    <li>화면 하단 <strong>"⚠️ 계정 탈퇴"</strong> 버튼 터치</li>
+    <li>비밀번호 입력 (이메일 가입자) 또는 "확인" 입력 (Google 가입자)</li>
+    <li>탈퇴 완료</li>
+  </ul>
+  <p style="margin-top: 12px;"><strong>처리 시간: 즉시</strong></p>
+</div>
+
+<div class="method-box">
+  <div class="method-title">
+    <div class="method-num">2</div>
+    <div class="method-name">이메일 요청</div>
+  </div>
+  <p>앱에 접속할 수 없거나 다른 사정이 있는 경우, 아래 이메일로 계정 삭제를 요청하실 수 있습니다.</p>
+  <p><strong>요청 이메일에 포함할 정보:</strong></p>
+  <ul>
+    <li>회원가입 시 사용한 이메일 주소</li>
+    <li>가입 방법 (이메일 직접 가입 또는 Google 간편 로그인)</li>
+    <li>요청 사유 (선택)</li>
+    <li>제목: "HeyStudy 계정 삭제 요청"</li>
+  </ul>
+  <a href="mailto:jyjy.9080@gmail.com?subject=HeyStudy%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD&body=%5B%EA%B0%80%EC%9E%85%20%EC%9D%B4%EB%A9%94%EC%9D%BC%5D%3A%20%0A%5B%EA%B0%80%EC%9E%85%20%EB%B0%A9%EB%B2%95%5D%3A%20%EC%9D%B4%EB%A9%94%EC%9D%BC%20%2F%20Google%20%28%ED%83%9D1%29%0A%5B%EC%9A%94%EC%B2%AD%20%EC%82%AC%EC%9C%A0%5D%3A%20%28%EC%84%A0%ED%83%9D%29%0A%0A%EC%9C%84%20%EA%B3%84%EC%A0%95%EC%9D%84%20%EC%82%AD%EC%A0%9C%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94." class="email-link">📧 이메일로 요청하기</a>
+  <p style="margin-top: 12px; font-size: 14px; color: var(--muted);">
+    <strong>처리 시간:</strong> 영업일 기준 3일 이내 처리, 7일 이내 결과 통지
+  </p>
+</div>
+
+<h2>삭제되는 데이터의 종류</h2>
+<p>계정 삭제 요청 시 다음의 모든 데이터가 영구 삭제됩니다.</p>
+
+<table>
+<tr><th>구분</th><th>삭제 항목</th></tr>
+<tr><td>계정 정보</td><td>이메일 주소, 이름, 비밀번호 해시, Google 사용자 식별자</td></tr>
+<tr><td>학습 정보</td><td>학습 진도, 학습한 단어 목록, 학습 모드 사용 기록</td></tr>
+<tr><td>출석 정보</td><td>출석 일자, 현재 연속 출석일, 최대 연속 출석일</td></tr>
+<tr><td>포인트 정보</td><td>적립된 포인트, 포인트 적립 이력</td></tr>
+<tr><td>친구 초대 정보</td><td>본인의 초대 코드, 초대 관계 기록</td></tr>
+<tr><td>AI 카테고리</td><td>본인이 생성한 AI 카테고리 및 관련 단어 목록</td></tr>
+<tr><td>접속 로그</td><td>서비스 이용 일시, IP 주소, 기기 정보</td></tr>
+</table>
+
+<h2>삭제되지 않는 데이터</h2>
+<p>다음 데이터는 법령에 따라 일정 기간 보관될 수 있습니다.</p>
+
+<table>
+<tr><th>항목</th><th>보존 기간</th><th>법적 근거</th></tr>
+<tr><td>부정 이용 기록 (해당 시)</td><td>탈퇴 후 1년</td><td>회사 내부 방침 (부정 이용 방지)</td></tr>
+<tr><td>접속 로그 (운영용)</td><td>3개월</td><td>「통신비밀보호법」 시행령 제41조</td></tr>
+</table>
+
+<h2>삭제 처리 일정</h2>
+
+<table>
+<tr><th>요청 방법</th><th>접수 처리</th><th>비활성화</th><th>완전 삭제</th></tr>
+<tr><td>앱 내 직접 삭제</td><td>즉시</td><td>즉시</td><td>30일 후 자동</td></tr>
+<tr><td>이메일 요청</td><td>3일 이내</td><td>접수 후 즉시</td><td>30일 후 자동</td></tr>
+</table>
+
+<h2>주의사항</h2>
+
+<div class="warning-box">
+  <strong>⚠️ 계정 삭제 전 반드시 확인하세요</strong>
+  <ul style="margin-top: 8px; margin-bottom: 0;">
+    <li><strong>30일 이내 복구 가능</strong>: 탈퇴 후 30일 이내에 동일 계정으로 다시 로그인하면 자동으로 계정이 복구됩니다.</li>
+    <li><strong>30일 경과 후</strong>: 자동화 시스템(매일 KST 03:00 실행)에 의해 모든 데이터가 영구 삭제되며, 어떠한 방법으로도 복구할 수 없습니다.</li>
+    <li><strong>친구 초대 보상</strong>: 다른 회원이 회원의 초대 코드로 받았던 포인트는 회수되지 않으며, 그대로 유지됩니다.</li>
+    <li><strong>적립 포인트</strong>: 탈퇴와 함께 모든 포인트가 소멸되며, 어떠한 형태로도 환금되지 않습니다.</li>
+    <li><strong>재가입</strong>: 동일 이메일로 재가입은 가능하지만, 이전 학습 기록은 복구되지 않습니다.</li>
+  </ul>
+</div>
+
+<h2>법적 근거</h2>
+
+<p>본 계정 삭제 절차는 다음 법령 및 정책에 따라 운영됩니다.</p>
+<ul>
+  <li><strong>「개인정보 보호법」 제36조</strong> (개인정보의 정정·삭제)</li>
+  <li><strong>「개인정보 보호법」 제21조</strong> (개인정보의 파기)</li>
+  <li><strong>Google Play Store 데이터 안전성 정책</strong></li>
+  <li><strong>HeyStudy 개인정보 처리방침 제5조</strong> (개인정보의 파기 절차 및 방법)</li>
+</ul>
+
+<h2>문의처</h2>
+
+<p>계정 삭제 요청과 관련하여 추가 문의사항이 있으시면 아래로 연락해주세요.</p>
+
+<table>
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>개인정보 보호책임자</td><td>Minjae Kim</td></tr>
+<tr><td>이메일</td><td>jyjy.9080@gmail.com</td></tr>
+<tr><td>응답 시간</td><td>평일 09:00 ~ 18:00 (주말·공휴일 제외)</td></tr>
+<tr><td>응답 기한</td><td>접수일로부터 10일 이내 (보호법 제35조)</td></tr>
+</table>
+
+<h2>권익 침해 시 구제 방법</h2>
+<p>회사가 본 페이지에서 안내한 절차대로 계정 삭제 요청을 처리하지 않거나 부당하게 거부하는 경우, 정보주체는 다음 기관에 권익 침해 구제를 신청할 수 있습니다.</p>
+
+<table>
+<tr><th>기관</th><th>전화 (국번없이)</th><th>홈페이지</th></tr>
+<tr><td>개인정보분쟁조정위원회</td><td>1833-6972</td><td>www.kopico.go.kr</td></tr>
+<tr><td>개인정보침해신고센터 (KISA)</td><td>118</td><td>privacy.kisa.or.kr</td></tr>
+</table>
+
+<footer>
+  <strong>HeyStudy</strong> · AI 맞춤 영어 단어 학습 앱<br>
+  © 2026 HeyStudy. All rights reserved.<br>
+  본 페이지는 「개인정보 보호법」 제36조 및 Google Play Store 데이터 안전성 정책에 따라 운영됩니다.<br>
+  문의: jyjy.9080@gmail.com
+</footer>
+
+</div>
+</body>
+</html>
